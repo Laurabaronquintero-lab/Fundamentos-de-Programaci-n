@@ -1,0 +1,24 @@
+Solicitar un nombre de usuario y contraseña. 
+Si son correctos, permitir el acceso; de lo contrario, dar 3 intentos antes de bloquear el sistema.
+
+import java.util.Scanner;
+public class ControlAcceso {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String user = "admin", pass = "1234";
+        int intentos = 0;
+        while (intentos < 3) {
+            System.out.print("Usuario: ");
+            String u = sc.next();
+            System.out.print("Clave: ");
+            String p = sc.next();
+            if (u.equals(user) && p.equals(pass)) {
+                System.out.println("Acceso exitoso."); break;
+            } else {
+                intentos++;
+                System.out.println("Incorrecto. Intentos restantes: " + (3-intentos));
+            }
+        }
+        if (intentos == 3) System.out.println("Sistema bloqueado.");
+    }
+}
