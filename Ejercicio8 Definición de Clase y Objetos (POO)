@@ -1,0 +1,13 @@
+Crear una clase Persona con atributos (nombre, edad) y un método para mostrar sus datos.
+
+class Persona {
+    String nombre; int edad;
+    void mostrar() { System.out.println(nombre + " tiene " + edad + " años."); }
+}
+public class TestPOO {
+    public static void main(String[] args) {
+        Persona p = new Persona();
+        p.nombre = "Ana"; p.edad = 25;
+        p.mostrar();
+    }
+}
