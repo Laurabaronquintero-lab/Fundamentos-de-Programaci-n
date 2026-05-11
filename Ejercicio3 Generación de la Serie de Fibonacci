@@ -1,0 +1,13 @@
+Generar los primeros N términos de la serie de Fibonacci, donde cada término es la suma de los dos anteriores.
+
+public class Fibonacci {
+    public static void main(String[] args) {
+        int n = 10, t1 = 0, t2 = 1;
+        for (int i = 1; i <= n; i++) {
+            System.out.print(t1 + " ");
+            int suma = t1 + t2;
+            t1 = t2;
+            t2 = suma;
+        }
+    }
+}
