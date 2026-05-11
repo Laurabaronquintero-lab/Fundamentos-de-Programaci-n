@@ -1,0 +1,11 @@
+Determinar si un número ingresado es primo mediante un ciclo que verifique sus divisores.
+
+public class Primo {
+    public static void main(String[] args) {
+        int n = 29; boolean esP = true;
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) { esP = false; break; }
+        }
+        System.out.println(n + (esP ? " es primo" : " no es primo"));
+    }
+}
