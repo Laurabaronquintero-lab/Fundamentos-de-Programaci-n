@@ -1,0 +1,10 @@
+Calcular el promedio de valores almacenados en un arreglo unidimensional.
+
+public class Ejercicio8 {
+    public static void main(String[] args) {
+        double[] notas = {4.5, 3.8, 5.0, 2.9};
+        double suma = 0;
+        for (double nota : notas) suma += nota;
+        System.out.println("Promedio: " + (suma / notas.length));
+    }
+}
