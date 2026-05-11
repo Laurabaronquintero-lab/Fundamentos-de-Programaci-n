@@ -1,0 +1,13 @@
+Buscar un elemento específico dentro de un arreglo y devolver su posición.
+
+public class Busqueda {
+    public static void main(String[] args) {
+        int[] datos = {10, 50, 30, 70, 80};
+        int buscar = 30;
+        for (int i = 0; i < datos.length; i++) {
+            if (datos[i] == buscar) {
+                System.out.println("Encontrado en posición: " + i);
+            }
+        }
+    }
+}
