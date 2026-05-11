@@ -1,0 +1,12 @@
+Crear métodos con el mismo nombre para calcular el área de un cuadrado y un rectángulo.
+
+class Area {
+    static double calcular(double l) { return l * l; }
+    static double calcular(double b, double h) { return b * h; }
+}
+public class TestSobrecarga {
+    public static void main(String[] args) {
+        System.out.println("Cuadrado: " + Area.calcular(4));
+        System.out.println("Rectángulo: " + Area.calcular(4, 5));
+    }
+}
